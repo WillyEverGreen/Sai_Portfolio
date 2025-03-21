@@ -704,9 +704,10 @@ body {
 /* Media Query for Smaller Laptops (Max Width: 1280px) */
 @media (max-width: 1280px) {
   /* Navigation Bar Adjustments */
-  /* * {
-    outline: 1px solid red; /* Highlights all elements */
-  } */
+  * {
+    outline: 1px solid transparent;
+    /* Highlights all elements */
+  }
 
   body {
     overflow-x: hidden;
@@ -1451,9 +1452,11 @@ body {
 
   .offer-heading {
     font-size: 12vw !important;
+    width: 200%;
+    padding-top: 10vh;
   }
   .offers-container h2 {
-    width: 500px !important;
+    width: 12w !important;
   }
   .offers {
     display: flex;
@@ -1481,7 +1484,7 @@ body {
   }
 
   .offer-card p {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 
   /* Footer */
@@ -1524,5 +1527,66 @@ body {
 
   .space-animation {
     display: none;
+  }
+}
+/* managing birds position */
+
+/* 501px - 560px */
+@media screen and (max-width: 560px) {
+  .bird {
+    top: 90px;
+    left: 58%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 160px;
+  }
+}
+
+/* 461px - 500px */
+@media screen and (max-width: 500px) {
+  .bird {
+    top: 15%;
+    left: 58%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 150px;
+  }
+}
+
+/* 401px - 460px */
+@media screen and (max-width: 460px) {
+  .bird {
+    top: 15.5% !important;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 140px;
+  }
+}
+
+/* 300px - 400px */
+@media screen and (max-width: 400px) {
+  .bird {
+    top: 17% !important;
+    left: 63%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 130px;
+  }
+}
+/* For ultra-small devices (300px - 360px) */
+@media screen and (max-width: 360px) {
+  .bird {
+    top: 17.5% !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bird > dotlottie-player {
+    max-width: 130px;
   }
 }

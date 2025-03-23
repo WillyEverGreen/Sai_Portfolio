@@ -1324,8 +1324,8 @@ body {
 
   .bird {
     position: absolute;
-    top: 80px;
-    left: 55%;
+    top: 220px !important;
+    left: 55% !important;
     transform: translateX(-50%);
   }
 
@@ -1547,8 +1547,8 @@ body {
 /* 501px - 560px */
 @media screen and (max-width: 560px) {
   .bird {
-    top: 90px;
-    left: 58%;
+    top: 234px !important;
+    left: 58% !important;
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
@@ -1559,8 +1559,8 @@ body {
 /* 461px - 500px */
 @media screen and (max-width: 500px) {
   .bird {
-    top: 15%;
-    left: 58%;
+    top: 240px !important;
+    left: 58% !important;
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
@@ -1571,8 +1571,8 @@ body {
 /* 401px - 460px */
 @media screen and (max-width: 460px) {
   .bird {
-    top: 15.5% !important;
-    left: 60%;
+    top: 252px !important;
+    left: 59% !important;
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
@@ -1583,8 +1583,8 @@ body {
 /* 300px - 400px */
 @media screen and (max-width: 400px) {
   .bird {
-    top: 17% !important;
-    left: 63%;
+    top: 259px !important;
+    left: 63% !important;
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
@@ -1594,8 +1594,8 @@ body {
 /* For ultra-small devices (300px - 360px) */
 @media screen and (max-width: 360px) {
   .bird {
-    top: 17.5% !important;
-    left: 50%;
+    top: 259px !important;
+    left: 63% !important;
     transform: translateX(-50%);
   }
 
@@ -1605,8 +1605,8 @@ body {
 }
 @media screen and (max-width: 320px) {
   .bird {
-    top: 20% !important; /* Slight adjustment for smaller screens */
-    left: 45% !important;
+    top: 275px !important; /* Slight adjustment for smaller screens */
+    left: 68% !important;
     transform: translateX(-50%);
   }
 
@@ -1629,48 +1629,51 @@ body {
 /* 561px - 768px (Tablets) */
 @media screen and (min-width: 561px) and (max-width: 768px) {
   .bird {
-    top: 95px;
-    left: 70%;
+    top: 235px !important;
+    left: 70% !important;
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
-    max-width: 180px;
+    max-width: 180px !important;
   }
 }
 
 /* 769px - 1024px (Small Laptops) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .bird {
-    top: 70px;
-    left: 50%;
+    top: 210px !important;
+    left: 70% !important;
+    transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
-    max-width: 200px;
+    max-width: 200px !important;
   }
 }
 
 /* 1025px - 1280px (Laptops & Desktops) */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .bird {
-    top: -20px;
-    left: 50%;
+    top: 85px !important;
+    left: 68% !important;
+    transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
-    max-width: 240px;
+    max-width: 260px !important;
   }
 }
 
 /* 1281px - 1440px (Wider Screens) */
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
   .bird {
-    top: -35px;
-    left: 68%;
+    top: 65px !important;
+    left: 68% !important;
+    transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .bird > dotlottie-player {
-    max-width: 280px;
+    max-width: 300px !important;
   }
 }
 
@@ -1689,7 +1692,7 @@ body {
 /* Ultra-Wide Screens (1921px and above) */
 @media screen and (min-width: 1921px) {
   .bird {
-    top: -150px;
+    top: -120px;
     left: 68%;
     transform: translateX(-50%);
   }

@@ -1235,22 +1235,22 @@ body {
     font-size: 6vw;
   }
   @media (max-width: 580px) {
-    .ele2 {
-      margin-top: 62px;
-      padding-right: 0;
-    }
-
     nav {
       display: flex;
-      justify-content: space-between; /* Ensures left & right alignment */
+      justify-content: space-evenly; /* Ensures left & right alignment */
       align-items: center;
       padding: 10px 20px;
-      gap: 20vw;
+      gap: 5vw;
     }
 
     .ele1 {
       text-align: left;
       margin-left: 10vw;
+    }
+    .ele2 {
+      text-align: left;
+      margin-right: 5vw;
+      margin-top: 5vw;
     }
 
     .nav-menu {
@@ -1528,6 +1528,19 @@ body {
   .space-animation {
     display: none;
   }
+  .slider-wrapper {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .slide img {
+    width: 750px;
+    height: 355px;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
 }
 /* managing birds position */
 
@@ -1588,5 +1601,99 @@ body {
 
   .bird > dotlottie-player {
     max-width: 130px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .bird {
+    top: 20% !important; /* Slight adjustment for smaller screens */
+    left: 45% !important;
+    transform: translateX(-50%);
+  }
+
+  .bird > dotlottie-player {
+    max-width: 100px; /* Smaller size for tiny screens */
+  }
+}
+@media screen and (max-width: 280px) {
+  .bird {
+    top: 20% !important; /* Slight adjustment for smaller screens */
+    left: 45% !important;
+    transform: translateX(-50%);
+  }
+
+  .bird > dotlottie-player {
+    max-width: 100px; /* Smaller size for tiny screens */
+  }
+}
+/* for bigger screen bird posn --------------------//
+/* 561px - 768px (Tablets) */
+@media screen and (min-width: 561px) and (max-width: 768px) {
+  .bird {
+    top: 95px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 180px;
+  }
+}
+
+/* 769px - 1024px (Small Laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .bird {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 200px;
+  }
+}
+
+/* 1025px - 1280px (Laptops & Desktops) */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .bird {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 240px;
+  }
+}
+
+/* 1281px - 1440px (Wider Screens) */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .bird {
+    top: -35px;
+    left: 68%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 280px;
+  }
+}
+
+/* 1441px - 1920px (Full HD Screens) */
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .bird {
+    top: -65px;
+    left: 68%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 320px;
+  }
+}
+
+/* Ultra-Wide Screens (1921px and above) */
+@media screen and (min-width: 1921px) {
+  .bird {
+    top: -150px;
+    left: 68%;
+    transform: translateX(-50%);
+  }
+  .bird > dotlottie-player {
+    max-width: 360px !important;
   }
 }

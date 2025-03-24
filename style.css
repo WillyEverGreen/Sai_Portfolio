@@ -108,13 +108,7 @@ body {
   left: 58%;
   top: -75%;
 }
-@media screen and (min-width: 1300px) {
-  .bird {
-    position: absolute;
-    left: 58%;
-    top: -96%;
-  }
-}
+
 .menu-item {
   display: flex;
   font-size: 0.9vw;
@@ -918,13 +912,6 @@ body {
     padding: 0;
   }
 
-  .bird {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 200px !important;
-    height: 200px !important;
-  }
   .screw {
     display: none;
   }
@@ -1060,13 +1047,6 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 0 3vw;
-  }
-
-  .bird {
-    width: 180px !important;
-    height: 180px !important;
-    top: 35%;
-    left: 50%;
   }
 
   .screw,
@@ -1544,159 +1524,4 @@ body {
 }
 /* managing birds position */
 
-/* 501px - 560px */
-@media screen and (max-width: 560px) {
-  .bird {
-    top: 234px !important;
-    left: 58% !important;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 160px;
-  }
-}
-
-/* 461px - 500px */
-@media screen and (max-width: 500px) {
-  .bird {
-    top: 240px !important;
-    left: 58% !important;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 150px;
-  }
-}
-
-/* 401px - 460px */
-@media screen and (max-width: 460px) {
-  .bird {
-    top: 252px !important;
-    left: 59% !important;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 140px;
-  }
-}
-
-/* 300px - 400px */
-@media screen and (max-width: 400px) {
-  .bird {
-    top: 259px !important;
-    left: 63% !important;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 130px;
-  }
-}
-/* For ultra-small devices (300px - 360px) */
-@media screen and (max-width: 360px) {
-  .bird {
-    top: 259px !important;
-    left: 63% !important;
-    transform: translateX(-50%);
-  }
-
-  .bird > dotlottie-player {
-    max-width: 130px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .bird {
-    top: 275px !important; /* Slight adjustment for smaller screens */
-    left: 68% !important;
-    transform: translateX(-50%);
-  }
-
-  .bird > dotlottie-player {
-    max-width: 100px; /* Smaller size for tiny screens */
-  }
-}
-@media screen and (max-width: 280px) {
-  .bird {
-    top: 20% !important; /* Slight adjustment for smaller screens */
-    left: 45% !important;
-    transform: translateX(-50%);
-  }
-
-  .bird > dotlottie-player {
-    max-width: 100px; /* Smaller size for tiny screens */
-  }
-}
-/* for bigger screen bird posn --------------------//
-/* 561px - 768px (Tablets) */
-@media screen and (min-width: 561px) and (max-width: 768px) {
-  .bird {
-    top: 235px !important;
-    left: 70% !important;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 180px !important;
-  }
-}
-
-/* 769px - 1024px (Small Laptops) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .bird {
-    top: 210px !important;
-    left: 70% !important;
-    transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 200px !important;
-  }
-}
-
-/* 1025px - 1280px (Laptops & Desktops) */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .bird {
-    top: 85px !important;
-    left: 68% !important;
-    transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 260px !important;
-  }
-}
-
-/* 1281px - 1440px (Wider Screens) */
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .bird {
-    top: 65px !important;
-    left: 68% !important;
-    transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 300px !important;
-  }
-}
-
-/* 1441px - 1920px (Full HD Screens) */
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
-  .bird {
-    top: -65px;
-    left: 68%;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 320px;
-  }
-}
-
-/* Ultra-Wide Screens (1921px and above) */
-@media screen and (min-width: 1921px) {
-  .bird {
-    top: -120px;
-    left: 68%;
-    transform: translateX(-50%);
-  }
-  .bird > dotlottie-player {
-    max-width: 360px !important;
-  }
-}
+/* 

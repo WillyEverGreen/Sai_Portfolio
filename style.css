@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -1527,4 +1528,1532 @@ body {
 }
 /* managing birds position */
 
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+.section-1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #bc4749;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.hero-section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-text {
+  color: #f2e8cf;
+  font-size: 12vw;
+  font-weight: 900;
+  font-family: rowdies;
+  width: 100%;
+  padding: 3vw;
+  padding-top: 0;
+  padding-bottom: 15vh;
+  text-transform: capitalize;
+  line-height: 0.9;
+}
+.line1 {
+  text-align: right;
+}
+.line2 {
+  text-align: left;
+}
+.section-1 nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  position: relative;
+}
+.ele1 {
+  display: flex;
+  font-size: 2.3vw;
+  padding-left: 1.8vw;
+  padding-top: 1.5vw;
+  font-family: Kanit;
+  color: #f2e8cf;
+}
+
+.name2 {
+  transition: color 0.3s ease;
+}
+
+.name2:hover {
+  color: #6a994e; /* Change text color on hover */
+}
+
+.ele2 {
+  padding-right: 1.5vw;
+  padding-top: 1.5vw;
+}
+.ele3 {
+  position: absolute;
+  width: 7.5vw;
+  bottom: -15vh;
+  left: 20vw;
+  text-transform: capitalize;
+  text-align: right;
+  color: #f2e8cf;
+  font-family: kanit;
+  line-height: 0.9;
+  font-weight: 200;
+}
+.nav-menu a {
+  color: inherit; /* Uses the default text color */
+  text-decoration: none; /* Removes the underline */
+}
+
+.nav-menu a:hover {
+  color: inherit; /* Ensures the color doesn't change on hover */
+  text-decoration: none;
+}
+
+.nav-menu a:visited {
+  color: inherit; /* Ensures visited links don't turn purple */
+}
+
+.nav-menu a:active {
+  color: inherit;
+}
+
+.bird {
+  position: absolute;
+  left: 58%;
+  top: -75%;
+}
+
+.menu-item {
+  display: flex;
+  font-size: 0.9vw;
+  color: #f2e8cf;
+  font-family: Kanit;
+  cursor: pointer;
+}
+.side-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align everything to the right */
+  width: 100%;
+}
+
+.line {
+  width: 50vw;
+  height: 5px;
+  background-color: #f2e8cf;
+}
+.side-text-content {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.c1 {
+  color: #f2e8cf;
+  font-family: kanit;
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 0.9;
+  padding: 1.2vw;
+}
+.c2 {
+  color: #f2e8cf;
+  font-family: kanit;
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 0.9;
+  padding: 1.2vw;
+}
+
+/* section 2 starts */
+.section-2 {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(myimage.jpg); */
+  background-color: #f2e8cf;
+  display: flex;
+}
+.my-image-card {
+  /* background-color: #6a994e; */
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me {
+  /* background-color: aliceblue; */
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 5vw;
+  align-self: flex-start;
+  padding-bottom: 60px;
+}
+.about-me-heading {
+  display: flex;
+  justify-content: space-around;
+  gap: -80px;
+
+  width: 100%;
+}
+.about-me-heading .text {
+  font-size: 6.4vw;
+  font-family: Rowdies;
+  color: #bc4749;
+  align-self: flex-start;
+  width: 70%;
+}
+.x-symbol {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */ /* Adjust spacing */
+
+  justify-items: flex-end; /* Center align the symbols */
+}
+.about-me-content {
+  width: 100%;
+  font-size: 3vh;
+  font-family: Kanit;
+  line-height: 1.1;
+  align-self: flex-start;
+  letter-spacing: 2px;
+  padding-top: 15px;
+}
+.about-me-content p {
+  font-size: 3vh;
+  color: #474a56;
+}
+.about-me-heading img {
+  width: 50px;
+}
+.card1 {
+  width: 25vw;
+  height: 65vh;
+  box-shadow: 8px 8px 7px 10px rgba(0, 0, 0, 0.4);
+  color: #f2e8cf;
+
+  border-radius: 50px 50px 50px 50px;
+}
+.upper-part {
+  background-color: #fbf8f1;
+  height: 10.5%;
+  border-radius: 50px 50px 0 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 120px;
+}
+.middle-part {
+  background: url(MyImage.jpg);
+  background-size: cover; /* Ensures it fills the div */
+  background-position: center 70%; /* Centers the image */
+  background-repeat: no-repeat;
+  height: 80%;
+}
+.down-part {
+  background-color: #fbf8f1;
+  height: 9.5%;
+
+  border-radius: 0 0 50px 50px;
+}
+.screw img {
+  width: 2vw;
+  padding-top: 18px;
+  padding-right: 10px;
+}
+.colors {
+  display: flex;
+  width: 5vw;
+  gap: 14px;
+  padding-top: 25px;
+}
+.color1 {
+  background-color: #bc4749;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.color2 {
+  background-color: #f6bd60;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.color3 {
+  background-color: #a7c957;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.about-me-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 4vh;
+}
+.about-me-resume button {
+  z-index: 10;
+}
+.btn1,
+.btn2 {
+  padding: 1.5vh 2.4vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.btn1 {
+  background-color: #bc4749;
+  color: #f2e8cf;
+
+  border: 0.3vw solid #bc4749;
+}
+
+.btn1:hover {
+  background-color: #a63c3e;
+  transform: scale(1.05);
+}
+
+.btn2 {
+  background-color: transparent;
+  color: #bc4749;
+  border: 0.3vw solid #bc4749;
+}
+
+.btn2:hover {
+  background-color: #bc4749;
+  color: #f2e8cf;
+  transform: scale(1.05);
+}
+/* section 3*/
+.section-3 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.top {
+  width: 100vw;
+  height: 50vh;
+  background-color: #f2e8cf;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  transform-origin: center;
+  background-color: rgb(0, 0, 0);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  overflow-x: auto; /* Changed to horizontal scroll */
+}
+
+.bottom {
+  width: 100vw;
+  height: 50vh;
+  background-color: #f2e8cf;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+.svg-2 {
+  position: absolute;
+  right: 5%;
+
+  top: 20%;
+}
+.main h1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: rowdies;
+  font-size: 10vw;
+  position: absolute;
+  color: #bc4749;
+}
+
+#tp {
+  top: 100%;
+}
+
+#bp {
+  top: 0% !important;
+}
+
+.section-4 {
+  width: 0 auto;
+  height: 100vh;
+  background-color: #bc4749;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.section-4-content {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s background-color;
+  /* overflow: hidden; */
+}
+
+.section-4 nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* Changed to visible */
+}
+
+.slider-wrapper {
+  width: max-content;
+  padding: 0 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  background-color: #c96c6d;
+}
+
+.slide {
+  width: 750px;
+  height: 450px;
+  background: gray;
+}
+
+.section-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.marker-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max-content;
+  height: 100vh;
+}
+
+.marker {
+  position: relative;
+  width: 2px;
+  height: 100%;
+  background: #000;
+}
+
+.marker:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.active-slide {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  font-size: 15px;
+}
+.section-4 img:hover {
+  transform: scale(1.1); /* Enlarge the image */
+  z-index: 10; /* Bring the hovered image to the front */
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    z-index 0.5s ease;
+}
+/* sec5 */
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+
+.section-5 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bc4749;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: relative;
+  gap: 15vh;
+}
+
+.skills-container,
+.offers-container {
+  width: 45%;
+  /* background-color: #6a994e; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tech-heading,
+.offer-heading {
+  font-size: 4vw !important;
+  color: #f2e8cf;
+  font-family: "Rowdies", sans-serif;
+  margin-bottom: 3vh;
+}
+.tech-heading {
+  padding-bottom: 3.2vh !important;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-grid img {
+  width: 78px !important;
+  height: 78px !important;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgba(255, 191, 53, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.2);
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 5vh;
+}
+
+.offer-card {
+  width: 20vw;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.offer-card img {
+  width: 18vw;
+  height: 34vh;
+}
+
+.offer-card h3 {
+  font-size: 1.8rem !important;
+  color: #f2e8cf;
+  padding-top: 4vh;
+}
+
+.offer-card p {
+  padding-top: 2vh;
+  font-size: 1rem !important;
+  color: #ddd;
+}
+
+/* Hover Effect */
+.offer-card:hover {
+  transform: scale(1.1) translateY(-10px);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1) translateY(-10px);
+}
+.skill-p {
+  padding: 2vw !important;
+  color: #ddd;
+}
+
+.skill-p p {
+  font-size: 1.3vw;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  line-height: 0.9;
+  font-family: kanit;
+  columns: #ddd;
+  /*   width: 750px !important; */
+  /* background-color: #6a994e; */
+  text-align: center;
+  opacity: 0.8;
+}
+/* section6 footer*/
+.footer {
+  background-color: #474a56;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: kanit;
+  /* background: url(space.jpg);\ */
+}
+.foooter {
+  position: relative;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+.footer-icons {
+  padding-top: 1vw;
+}
+.footer-section p {
+  padding-top: 1vw;
+}
+.footer h3 {
+  border-bottom: 2px solid #f2e8cf;
+  padding-bottom: 10px;
+  padding-top: 8vh;
+  font-size: 2vw;
+}
+.footer ul {
+  list-style: none;
+  padding-top: 1vw;
+  padding-bottom: 5vw;
+}
+.footer ul li {
+  margin: 8px 0;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer ul li a:hover {
+  color: #f2e8cf;
+}
+.footer-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.footer-icons a:hover {
+  color: #f2e8cf;
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.feedback-form button {
+  background-color: #f2e8cf;
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.feedback-form button:hover {
+  background-color: #e6a000;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #11112b;
+  color: #ffffff;
+  width: 100%;
+  /* position: absolute; */
+  bottom: 0;
+}
+.space-animation {
+  position: absolute;
+  top: 36%;
+  width: 20vh;
+  left: 38%;
+}
+
+/* Responsive Design */
+
+/* writing media queries for smaller laptops */
+/* Media Query for Smaller Laptops (Max Width: 1280px) */
+@media (max-width: 1280px) {
+  /* Navigation Bar Adjustments */
+  * {
+    outline: 1px solid transparent;
+    /* Highlights all elements */
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ele1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ele3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-text {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .bird {
+    position: absolute;
+  }
+  .ele3 {
+    text-align: right;
+  }
+
+  /* About Me Section */
+  .about-me-heading {
+    padding-top: 20vh;
+  }
+  .about-me-content p {
+    font-size: 1rem;
+    padding: 20px 0; /* Added padding above and below paragraph */
+  }
+
+  .about-me-resume {
+    padding: 0;
+    height: 200px;
+
+    gap: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  .fan {
+    height: 20vh;
+  }
+  .about-me-resume button {
+    width: 150px; /* Uniform button size */
+    padding: 10px; /* Added padding to buttons for better appearance */
+  }
+
+  /* Projects Section */
+  .slider img {
+    width: 100%; /* Ensure images scale properly */
+  }
+
+  /* Skills Section */
+  .section-5 {
+    gap: 10vh;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skill-p p {
+    font-size: 0.9rem;
+  }
+  .offer-card h3 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .offer-card p {
+    font-size: 1rem;
+  }
+
+  /* Offers Section */
+  @media (max-width: 1024px) {
+    .offers {
+      display: flex;
+      /* flex-direction: column; Stack cards in a column for smaller screens */
+      align-items: center;
+      gap: 20px;
+    }
+
+    .offer-card {
+      /* Adjust height based on content */
+      max-height: 500px !important; /* Set a limit to prevent overflow */
+      overflow: hidden; /* Prevent extra content from extending */
+    }
+
+    .offer-card img {
+      width: 100%; /* Makes image responsive */
+      max-width: 250px; /* Fix maximum image width */
+      height: 250px; /* Maintains aspect ratio */
+      display: block;
+      margin: 0 auto; /* Centers the image */
+      border-radius: 10px; /* Optional: Rounds corners for a better look */
+    }
+
+    .offer-card h3 {
+      font-size: 1.5rem !important;
+    }
+
+    .offer-card p {
+      font-size: 12px !important;
+    }
+  }
+
+  /* Footer Adjustments */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+  }
+  .space-animation {
+    position: absolute;
+    top: 55%;
+  }
+
+  .space-animation dotlottie-player {
+    width: 320px !important; /* Reduced width */
+    height: 320px !important; /* Reduced height */
+    top: 40%;
+  }
+  .sun {
+    display: none;
+  }
+  .earth {
+    display: none;
+  }
+  .moon {
+    display: none;
+  }
+}
+.footer-containerr {
+  position: relative; /* Needed for absolute positioning of stars */
+}
+
+.star {
+  position: absolute;
+  width: 30px; /* Adjust star size */
+  height: auto;
+  opacity: 0.8;
+  animation: twinkle 2s infinite alternate;
+}
+.footer-container {
+  overflow: hidden;
+}
+/*below 1024px */
+@media (max-width: 1024px) {
+  /* General Fix */
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Navigation Bar Adjustments */
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ele1 {
+    font-size: 1.5rem;
+  }
+
+  .ele3 {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5vw;
+  }
+
+  .main-text {
+    padding: 0;
+  }
+
+  .screw {
+    display: none;
+  }
+  .colors {
+    display: none;
+  }
+
+  /* About Me Section */
+  .about-me-heading {
+    padding-top: 15vh;
+    font-size: 1.8rem;
+  }
+
+  .about-me-content p {
+    font-size: 14px !important;
+    padding: 15px 0;
+  }
+
+  .about-me-resume {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .fan {
+    height: 15vh;
+  }
+
+  .about-me-resume button {
+    width: 140px;
+    padding: 8px;
+  }
+
+  /* Projects Section */
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Skills Section */
+  .section-5 {
+    gap: 9vh !important;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .skill-p p {
+    font-size: 13px;
+  }
+
+  /* Offers Section */
+  .offers {
+    padding-right: 3vw;
+  }
+
+  .offer-card h3 {
+    font-size: 14px;
+  }
+
+  .offer-card p {
+    font-size: 13px !important;
+  }
+
+  /* Footer Adjustments */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 90%;
+  }
+
+  .space-animation {
+    top: 50%;
+    max-width: 280px;
+    height: 280px;
+  }
+
+  .sun,
+  .earth,
+  .moon {
+    display: none;
+  }
+
+  /* Footer Stars */
+  .footer-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .star {
+    width: 20px;
+    opacity: 0.7;
+  }
+}
+@media (max-width: 768px) {
+  /* General Fix */
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Navigation Bar Adjustments */
+  .nav-menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ele1 {
+    font-size: 1.3rem;
+  }
+
+  .ele3 {
+    font-size: 0.8rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3vw;
+  }
+
+  .screw,
+  .colors {
+    display: none;
+  }
+
+  /* About Me Section */
+  .about-me-heading {
+    padding-top: 12vh;
+    font-size: 1.6rem;
+  }
+
+  .about-me-content p {
+    font-size: 13px !important;
+    padding: 10px 0;
+  }
+
+  .about-me-resume {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .fan {
+    height: 12vh;
+  }
+
+  .about-me-resume button {
+    width: 130px;
+    padding: 7px;
+  }
+
+  /* Projects Section */
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two icons per row */
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .skills-grid img {
+    width: 60px !important; /* Adjust icon size */
+    height: 60px !important;
+    object-fit: contain;
+  }
+
+  .skill-p p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+  .section-5 {
+    gap: 2vh !important;
+  }
+
+  /* Offers Section */
+  .offer-card {
+    /* padding-right: 1vw; */
+    width: 140px;
+  }
+
+  .offer-card h3 {
+    font-size: 20px !important;
+  }
+
+  .offer-card p {
+    font-size: 10px !important;
+  }
+
+  /* Footer Adjustments */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .footer-section {
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .feedback-form {
+    width: 90%; /* Ensure form stays within screen */
+    max-width: 500px; /* Prevents it from being too wide */
+    margin: 0 auto; /* Centers the form */
+    padding: 15px;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%; /* Makes sure fields take full width of form */
+    max-width: 100%; /* Prevents overflow */
+    padding: 10px; /* Ensures good spacing */
+    font-size: 14px; /* Adjust for readability */
+  }
+
+  .feedback-form textarea {
+    height: 120px; /* Prevents it from shrinking too much */
+    resize: vertical; /* Allows manual resizing */
+  }
+
+  .feedback-form button {
+    width: 100%; /* Makes submit button full width */
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* .space-animation {
+    top: 55%;
+    max-width: 150px !important;
+    height: 150px !important;
+  } */
+  .space-animation {
+    display: none;
+  }
+
+  .sun,
+  .earth,
+  .moon {
+    display: none;
+  }
+
+  /* Footer Stars */
+  .footer-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .star {
+    width: 18px;
+    opacity: 0.6;
+  }
+}
+
+/* for mobile device ---------------------*/
+@media (max-width: 580px) {
+  /* Section 1 */
+  .section-1 {
+    width: 100%;
+    height: auto;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-1 .ele1 {
+    font-size: 6vw;
+    padding: 4vw;
+    padding-left: 0 !important;
+  }
+  .section-1 .ele2 {
+    padding: 8vw;
+    font-size: 6vw;
+  }
+  @media (max-width: 580px) {
+    nav {
+      display: flex;
+      justify-content: space-evenly; /* Ensures left & right alignment */
+      align-items: center;
+      padding: 10px 20px;
+      gap: 5vw;
+    }
+
+    .ele1 {
+      text-align: left;
+      margin-left: 10vw;
+    }
+    .ele2 {
+      text-align: left;
+      margin-right: 5vw;
+      margin-top: 5vw;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap; /* Prevents breaking into a new row */
+      justify-content: flex-end; /* Aligns items to the right */
+      text-align: left; /* Ensures links are aligned left */
+      gap: 4px;
+    }
+
+    .menu-item {
+      display: inline-block;
+      text-align: left;
+      white-space: nowrap; /* Prevents breaking */
+    }
+
+    .menu-item a {
+      font-size: 18px; /* Increases link size */
+      font-weight: 500;
+    }
+
+    .menu-item sup {
+      font-size: 12px;
+    }
+  }
+
+  .hero-section,
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-text {
+    padding-left: 0;
+  }
+
+  /* .main-text .line1,
+  .main-text .line2 {
+    font-size: clamp(24px, 30vw, 80px);
+  } */
+  .main-text p {
+    width: 100%;
+    font-size: 15vw;
+  }
+  .line1 .line2 {
+    align-items: center !important;
+  }
+  .ele3 {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .menu-item {
+    width: 100px;
+  }
+
+  .nav-menu p {
+    font-size: 14px;
+  }
+  .line {
+    margin-top: 90px;
+  }
+  .side-text-content {
+    /* position: absolute; */
+    font-size: 8vw;
+    left: 50%;
+    /* transform: translateX(-50%); */
+  }
+
+  .bird {
+    position: absolute;
+    top: 220px !important;
+    left: 55% !important;
+    transform: translateX(-50%);
+  }
+
+  .bird > dotlottie-player {
+    max-width: 160px;
+  }
+  .side-text p {
+    font-size: 20px;
+  }
+
+  /* Section 2 */
+  .section-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .my-image-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .card1 {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .middle-part {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-me {
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+  }
+  .text {
+    width: 300px !important;
+  }
+  .about-me-heading {
+    padding-top: 0;
+  }
+
+  .about-me-heading p {
+    font-size: 12vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-me-content {
+    font-size: 4vw;
+    line-height: 1.3;
+    padding: 15px 10px;
+  }
+  .x-symbol {
+    display: none;
+  }
+  .about-me-resume button {
+    font-size: 12px;
+  }
+
+  /* Section 3 */
+  .section-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2e8cf;
+  }
+
+  .top,
+  .bottom {
+    width: 100%;
+  }
+
+  /* Section 5 */
+  .section-5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #bc4749;
+    padding-bottom: 80px;
+  }
+
+  /* Skills Section */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(60px, auto));
+    gap: 10px;
+  }
+  .skill-p {
+    width: 300px;
+  }
+
+  .skill-p p {
+    width: 300px;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  .skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech-heading {
+    font-size: 12vw !important;
+    padding-top: 5vh;
+  }
+
+  .offer-heading {
+    font-size: 12vw !important;
+    width: 200%;
+    padding-top: 10vh;
+  }
+  .offers-container h2 {
+    width: 12w !important;
+  }
+  .offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+  }
+  .offer-card {
+    padding: 0;
+    width: 150%;
+  }
+  .offer-card img {
+    width: 100%;
+    max-width: 600px; /* Ensures image is not too large */
+    height: auto;
+    border-radius: 5px;
+    margin: 0%;
+    object-fit: cover;
+  }
+
+  .offer-card h3 {
+    font-size: 30px !important;
+    padding-top: 5vw;
+  }
+
+  .offer-card p {
+    font-size: 20px !important;
+  }
+
+  /* Footer */
+  .footer-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer h3 {
+    font-size: 5vw;
+    padding-top: 2vh;
+  }
+
+  .footer ul {
+    padding: 0;
+  }
+
+  .footer-icons a {
+    font-size: 18px;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 90%;
+  }
+
+  .space-animation {
+    display: none;
+  }
+  .slider-wrapper {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .slide img {
+    width: 750px;
+    height: 355px;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* managing birds position */
+
+>>>>>>> e382e7d08084b6d8132a921aeab32d75d803923d
 /* 

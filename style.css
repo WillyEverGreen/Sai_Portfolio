@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --section-heading-space-top: clamp(1.25rem, 4vh, 2.75rem);
+  --section-heading-space-bottom: clamp(0.75rem, 2.5vh, 1.75rem);
+}
+
 .section-1 {
   height: 100vh;
   width: 100vw;
@@ -198,6 +203,12 @@ body {
   color: #bc4749;
   align-self: flex-start;
   width: 70%;
+}
+
+.about-me-heading .text p {
+  margin-top: var(--section-heading-space-top);
+  margin-bottom: var(--section-heading-space-bottom);
+  line-height: 1;
 }
 .x-symbol {
   width: 30%;
@@ -578,7 +589,7 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  gap: 5vh;
+  gap: clamp(2rem, 6vh, 4rem);
 }
 .gear {
   position: absolute;
@@ -599,6 +610,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
 }
 
 .tech-heading,
@@ -606,10 +618,9 @@ body {
   font-size: 4vw !important;
   color: #f2e8cf;
   font-family: "Rowdies", sans-serif;
-  margin-bottom: 3vh;
-}
-.tech-heading {
-  padding-bottom: 3.2vh !important;
+  margin-top: var(--section-heading-space-top);
+  margin-bottom: var(--section-heading-space-bottom);
+  line-height: 1.05;
 }
 .skills-grid {
   display: flex;
@@ -634,6 +645,7 @@ body {
 .offers {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 3vw;
   margin-top: 5vh;
 }
@@ -725,7 +737,8 @@ body {
 .footer h3 {
   border-bottom: 2px solid #f2e8cf;
   padding-bottom: 10px;
-  padding-top: 8vh;
+  padding-top: var(--section-heading-space-top);
+  margin-bottom: var(--section-heading-space-bottom);
   font-size: 2vw;
 }
 .footer ul {
@@ -1525,6 +1538,14 @@ body {
     padding-bottom: 80px;
   }
 
+  .offers-container {
+    margin: 0;
+  }
+
+  .skills-container {
+    margin: 0;
+  }
+
   .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1547,13 +1568,15 @@ body {
 
   .tech-heading {
     font-size: 12vw !important;
-    padding-top: 5vh;
+    margin-top: var(--section-heading-space-top);
+    margin-bottom: var(--section-heading-space-bottom);
   }
 
   .offer-heading {
     font-size: 12vw !important;
-    width: 200%;
-    padding-top: 10vh;
+    width: 100%;
+    margin-top: var(--section-heading-space-top);
+    margin-bottom: var(--section-heading-space-bottom);
   }
   .offers-container h2 {
     width: 12w !important;
@@ -1563,11 +1586,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10vh;
+    gap: 5vh;
+    margin-top: 3vh;
   }
   .offer-card {
     padding: 0;
-    width: 150%;
+    width: min(100%, 420px);
   }
   .offer-card img {
     width: 100%;

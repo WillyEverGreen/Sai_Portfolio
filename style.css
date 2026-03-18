@@ -434,15 +434,94 @@ body {
 }
 
 .slide {
-  width: 750px;
-  height: 450px;
-  background: gray;
+  width: 75vw;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  height: auto;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.slide:hover .slide-overlay,
+.slide-wrapper:hover .slide-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slide-overlay h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #f2e8cf;
+  font-family: 'Rowdies', sans-serif;
+}
+
+.slide-overlay p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-family: kanit, sans-serif;
+}
+
+.demo-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #bc4749;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.demo-link:hover {
+  background-color: #a4383a;
+}
+
+.skill-pill {
+  background: rgba(246, 189, 96, 0.15);
+  color: #f2e8cf;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-family: kanit, sans-serif;
+  border: 1px solid rgba(246, 189, 96, 0.3);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.skill-pill:hover {
+  background: rgba(246, 189, 96, 0.3);
+  transform: translateY(-2px);
 }
 
 .section-4 img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .marker-wrapper {
@@ -489,14 +568,17 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
 .section-5 {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 10vh 5vw;
   background-color: #bc4749;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  flex-direction: column;
   position: relative;
-  gap: 15vh;
+  gap: 5vh;
 }
 .gear {
   position: absolute;
@@ -510,7 +592,8 @@ body {
 
 .skills-container,
 .offers-container {
-  width: 45%;
+  width: 90%;
+  max-width: 1100px;
   /* background-color: #6a994e; */
   display: flex;
   justify-content: center;

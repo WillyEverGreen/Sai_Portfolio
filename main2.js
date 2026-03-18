@@ -38,7 +38,7 @@ tl.to(
 let target = 0;
 let current = 0;
 let ease = 0.075;
-let slideCount = 5; // Updated to 5 slides
+let slideCount = 2; // Updated to 2 slides
 let currentSlide = 1;
 
 const slider = document.querySelector(".slider");

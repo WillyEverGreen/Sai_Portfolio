@@ -114,38 +114,60 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  // Animate the "SKILLS" heading
-  gsap.from(".tech-heading", {
-    opacity: 0,
-    y: -50,
-    duration: 1.5,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".tech-heading",
-      start: "top 40%", // Starts slightly early when entering
-      end: "top 60%",
-      scrub: 4,
-      toggleActions: "play none none reverse",
-    },
+  // Animate all Section 5 headings
+  gsap.utils.toArray(".section-5 h2").forEach((heading) => {
+    gsap.from(heading, {
+      opacity: 0,
+      y: -30,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: heading,
+        start: "top 85%",
+        end: "bottom 65%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      },
+    });
   });
 
-  // Animate Skill Icons (Staggered effect)
-  // Set initial scale to prevent small load size
-  gsap.set(".skills-grid img", { scale: 1 });
+  // Animate Tech Cards sequentially
+  gsap.utils.toArray(".tech-grid").forEach((grid) => {
+    const techCards = grid.querySelectorAll(".tech-card");
+    gsap.from(techCards, {
+      opacity: 0,
+      scale: 0.9,
+      y: 40,
+      duration: 1,
+      stagger: 0.15,
+      ease: "back.out(1.2)",
+      scrollTrigger: {
+        trigger: grid,
+        start: "top 85%",
+        end: "bottom 60%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
 
-  gsap.from(".skills-grid img", {
-    opacity: 0,
-    scale: 0.5,
-    stagger: 0.2,
-    duration: 1.5,
-    ease: "back.out(1.5)",
-    scrollTrigger: {
-      trigger: ".skills-grid",
-      start: "top 90%",
-      end: "top 50%",
-      scrub: 0.5,
-      toggleActions: "play none none reverse",
-    },
+  // Animate Experience/Education/Achievement Offers Cards
+  gsap.utils.toArray(".offers").forEach((offerContainer) => {
+    const cards = offerContainer.querySelectorAll(".offer-card");
+    gsap.from(cards, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.15,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: offerContainer,
+        start: "top 85%",
+        end: "bottom 60%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      },
+    });
   });
 
   // GSAP hover effect
@@ -157,67 +179,6 @@ document.addEventListener("DOMContentLoaded", function () {
     img.addEventListener("mouseleave", () => {
       gsap.to(img, { scale: 1, duration: 0.3, ease: "sine.out" });
     });
-  });
-  // Animate the paragraph under skills
-  gsap.from(".skill-p p", {
-    opacity: 0,
-    y: 50,
-    duration: 1.5,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".skill-p",
-      start: "top 80%", // Starts after skill icons appear
-      end: "top 55%",
-      scrub: 2,
-      toggleActions: "play none none reverse",
-    },
-  });
-
-  // Animate "WHAT I CAN OFFER" heading
-  gsap.from(".offer-heading", {
-    opacity: 0,
-    y: -50,
-    duration: 1.5,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".offer-heading",
-      start: "top 40%", // Appears naturally after skill section
-      end: "top 55%",
-      scrub: 4,
-      toggleActions: "play none none reverse",
-    },
-  });
-
-  // Animate Offer Cards (Web Dev from Left, UI/UX from Right)
-  // Animate Offer Cards on Scroll
-  gsap.from(".offer-card:nth-child(1)", {
-    opacity: 0,
-    x: -100,
-    duration: 1.5,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".offer-card:nth-child(1)",
-      start: "top 80%",
-      end: "top 50%",
-      scrub: 2,
-      toggleActions: "play none none reverse",
-    },
-    overwrite: "auto", // Prevent conflicts
-  });
-
-  gsap.from(".offer-card:nth-child(2)", {
-    opacity: 0,
-    x: 100,
-    duration: 1.5,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".offer-card:nth-child(2)",
-      start: "top 80%",
-      end: "top 50%",
-      scrub: 2,
-      toggleActions: "play none none reverse",
-    },
-    overwrite: "auto",
   });
 
   // Fix Hover Effect Using GSAP
